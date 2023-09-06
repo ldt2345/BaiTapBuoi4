@@ -6,62 +6,35 @@ using System.Threading.Tasks;
 
 namespace Bai1
 {
-    class XeNoiThanh
+    class XeNoiThanh:QuanLyChuyenXe
     {
-        string maSoChuyen;
-
-        public string MaSoChuyen
-        {
-            get { return maSoChuyen; }
-            set { maSoChuyen = value; }
-        }
-        string hoTenTaiXe;
-
-        public string HoTenTaiXe
-        {
-            get { return hoTenTaiXe; }
-            set { hoTenTaiXe = value; }
-        }
-        int soXe;
-
-        public int SoXe
-        {
-            get { return soXe; }
-            set { soXe = value; }
-        }
         int soTuyen;
 
-        public int SoTuyen
+        public int SoTuyen1
         {
             get { return soTuyen; }
             set { soTuyen = value; }
         }
-        double soKM;
+        int soKm;
 
-        public double SoKM
+        public int SoKm
         {
-            get { return soKM; }
-            set { soKM = value; }
+            get { return soKm; }
+            set { soKm = value; }
         }
-        double doanhThu;
+        public XeNoiThanh()
+        {
 
-        public double DoanhThu
-        {
-            get { return doanhThu; }
-            set { doanhThu = value; }
         }
-        public XeNoiThanh(string maSoChuyen, string hoTenTaiXe, int soXe, int soTuyen, double soKM, double doanhThu)
+        public XeNoiThanh(string maSoChuyen, string hoTenTaiXe, int soXe,int soTuyen, int soKm):base(maSoChuyen,hoTenTaiXe,soXe)
         {
-            this.maSoChuyen = maSoChuyen;
-            this.hoTenTaiXe = hoTenTaiXe;
-            this.soKM = soKM;
-            this.soXe = soXe;
             this.soTuyen = soTuyen;
-            this.doanhThu = doanhThu;
+            this.soKm = soKm;
         }
-        public double TinhTongDoanhThu()
+        public void Xuat()
         {
-
+            base.XuatQL();
+            Console.WriteLine("So tuyen: {0}, So km di duoc: {1}", soTuyen, soKm);
         }
     }
 }
