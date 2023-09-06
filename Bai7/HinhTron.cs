@@ -33,7 +33,7 @@ namespace Bai7
         public HinhTron()
         {
             Tam = new ToaDo();
-            banKinh = 12;
+            banKinh = 10.5;
         }
         public HinhTron(ToaDo tam, double banKinh)
         {

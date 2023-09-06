@@ -34,14 +34,14 @@ namespace Bai7
             this.x = x;
             this.y = y;
         }
-        public ToaDo()
+        public ToaDo():this(5,5)
         {
             ten = "O";
         }
         public override string ToString()
         {
 
-            return "Hinh tron : " + ten + "co toa do x la: " + x + "co toa do y la: " + y;
+            return "Hinh tron co tam " + ten + "(" + x + ","  + y + ")";
         }
     }
 }
