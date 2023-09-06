@@ -31,16 +31,17 @@ namespace Bai7
         }
         public ToaDo(float x, float y)
         {
-            X = x;
-            Y = y;
+            this.x = x;
+            this.y = y;
         }
         public ToaDo()
         {
+            ten = "O";
         }
         public override string ToString()
         {
 
-            return ("Ten: " + ten + "Toa do X:" + x + "Toa do Y: " + y);
+            return "Hinh tron : " + ten + "co toa do x la: " + x + "co toa do y la: " + y;
         }
     }
 }

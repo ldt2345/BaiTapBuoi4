@@ -37,13 +37,13 @@ namespace Bai7
         }
         public HinhTron(ToaDo tam, double banKinh)
         {
-            Tam = tam;
-            BanKinh = banKinh;                                   
+            this.tam = tam;
+            this.banKinh = banKinh;                                   
         }
         public void xuat()
         {
-            base.ToString();
-            Console.WriteLine("Chu vi la: {0}, Dien tich la: {1}", TinhChuVi(), TinhDienTich());
+           
+            Console.WriteLine("Chu vi la: {0}, Dien tich la: {1}",TinhChuVi(),TinhDienTich());
         }
     }
 }
